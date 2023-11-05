@@ -1,11 +1,12 @@
-import Header from "../components/header";
-import Footer from "@/components/footer";
+import Header from "../components/header";/*Importando componente do cabeçalho*/
+import Footer from "@/components/footer";/*Importando componente do rodapé*/
 
 export default function Home() {
   return (
 
-    <div className="">
-
+    <div>
+      <Header />
+      <Footer />
     </div>
 
   )
