@@ -22,13 +22,17 @@ const config: Config = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+      
+      'mm': {'max' : '350px'},
+      // => @media (max-width: 350px) { ... }
+
     },
     extend: {
       colors: {
         'roxoEscuro': '#3F189E',
         'laranja' : '#FA6600',
         'roxoClaro' : '#6948BA',
-        'cinza' : '#F0F2F5'
+        'cinza' : '#F0F2F5',
       },
       keyframes: {
         showSideBar:{
