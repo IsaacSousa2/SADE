@@ -8,11 +8,11 @@ import TwitterIcon from "../../public/images/TwitterIcon.png"/*Importando ícone
 export default function Footer(){
     
     return(
-        <footer className="bg-gradient-to-t from-roxoEscuro to-roxoClaro h-[270px] md:h-[450px] w-full text-cinza md-w-full mm:h-[840px]">
-            <div className="w-full p-2 flex justify-between max-w-[1700px] mx-auto items-center md-w-full md:flex-col md:items-center">
+        <footer className="bg-gradient-to-t from-roxoEscuro to-roxoClaro h-[270px] md:h-[450px] w-full text-cinza md-w-full mm:h-[840px]">{/* RODAPÉ PRINCIPAL */}
+            <div className="w-full p-2 flex justify-between max-w-[1700px] mx-auto items-center md-w-full md:flex-col md:items-center">{/* DIV PRINCIPAL */}
                 <div>
-                    <div className="flex flex-col md:items-center">
-                        <div className="mb-4 md:mb-10">
+                    <div className="flex flex-col md:items-center">{/* DIV ITENS */}
+                        <div className="mb-4 md:mb-10">{/* LOGO SADE */}
                             <Image src={logoBranco} alt={"Logo Sade Branco"} className=""/> 
                         </div>
                         <div className="mb-28 md:mb-6">
@@ -25,9 +25,9 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>          
-                <div className="md:w-full md:text-center md:flex md:justify-center md:mt-10">
-                    <div className=" flex text-center gap-16 mm:gap-6 mm:flex-wrap">
-                        <div className="flex flex-col gap-3 w-full md:w-full mm:gap-1.5">
+                <div className="md:w-full md:text-center md:flex md:justify-center md:mt-10">{/* DIV INFORMAÇÕES */}
+                    <div className=" flex text-center gap-16 mm:gap-6 mm:flex-wrap">{/* DIV LINKS */}
+                        <div className="flex flex-col gap-3 w-full md:w-full mm:gap-1.5">{/* BOX LINKS */}
                             <h1 className="font-semibold">SOBRE</h1>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
@@ -35,7 +35,7 @@ export default function Footer(){
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                         </div>
-                        <div className="flex flex-col gap-3 w-full md:w-full mm:gap-1.5">
+                        <div className="flex flex-col gap-3 w-full md:w-full mm:gap-1.5">{/* BOX LINKS */}
                             <h1 className="font-semibold">RECURSOS</h1>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
@@ -43,7 +43,7 @@ export default function Footer(){
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                         </div>
-                        <div className=" flex flex-col gap-3 w-full md:w-full mm:gap-1.5">
+                        <div className=" flex flex-col gap-3 w-full md:w-full mm:gap-1.5">{/* BOX LINKS */}
                             <h1 className="font-semibold">EXTRA</h1>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>
@@ -54,7 +54,7 @@ export default function Footer(){
                     </div>
                 </div>
             </div>  
-            <div className="flex justify-center border-t-2 border-white bg-roxoEscuro p-3">
+            <div className="flex justify-center border-t-2 border-white bg-roxoEscuro p-3">{/* COPYRIGHT */}
                 <p className="text-xs">©2023 SADE, Todos os direitos reservados</p>
             </div>
         </footer>
