@@ -1,14 +1,12 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
 import logoBranco from "../../public/images/logoBranco.png"/*Importando logo*/
-import FacebookIcon from "../../public/images/FacebookIcon.png"/*Importando ícone do facebook*/
-import InstaIcon from "../../public/images/InstaIcon.png"/*Importando ícone do Instagram*/
-import TwitterIcon from "../../public/images/TwitterIcon.png"/*Importando ícone do Twitter*/
-
+import FacebookIcon from "../../public/icons/FacebookIcon.png"/*Importando ícone do facebook*/
+import InstaIcon from "../../public/icons/InstaIcon.png"/*Importando ícone do Instagram*/
+import TwitterIcon from "../../public/icons/TwitterIcon.png"/*Importando ícone do Twitter*/
 export default function Footer(){
-    
     return(
-        <footer className="bg-gradient-to-t from-roxoEscuro to-roxoClaro h-[270px] md:h-[450px] w-full text-cinza md-w-full mm:h-[840px]">
+        <footer className="mt-24 bg-gradient-to-t from-roxoEscuro to-roxoClaro h-[270px] md:h-[450px] w-full text-cinza md-w-full mm:h-[840px]">
             <div className="w-full p-2 flex justify-between max-w-[1700px] mx-auto items-center md-w-full md:flex-col md:items-center">
                 <div>
                     <div className="flex flex-col md:items-center">
@@ -26,7 +24,7 @@ export default function Footer(){
                     </div>
                 </div>          
                 <div className="md:w-full md:text-center md:flex md:justify-center md:mt-10">
-                    <div className=" flex text-center gap-16 mm:gap-6 mm:flex-wrap">
+                    <div className="flex text-center gap-16 mm:gap-6 mm:flex-wrap">
                         <div className="flex flex-col gap-3 w-full md:w-full mm:gap-1.5">
                             <h1 className="font-semibold">SOBRE</h1>
                             <a href="#" className="hover:text-roxoEscuro duration-[0.5s]">Lorem</a>

@@ -33,6 +33,9 @@ const config: Config = {
         'laranja' : '#FA6600',
         'roxoClaro' : '#6948BA',
         'cinza' : '#F0F2F5',
+        'preto' : '#000000',
+        'branco' : '#ffffff',
+        'roxoBg' : '#E0E7FF'
       },
       keyframes: {
         showSideBar:{
