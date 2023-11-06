@@ -1,12 +1,10 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
 import logoBranco from "../../public/images/logoBranco.png"/*Importando logo*/
-import FacebookIcon from "../../public/images/FacebookIcon.png"/*Importando ícone do facebook*/
-import InstaIcon from "../../public/images/InstaIcon.png"/*Importando ícone do Instagram*/
-import TwitterIcon from "../../public/images/TwitterIcon.png"/*Importando ícone do Twitter*/
-
+import FacebookIcon from "../../public/icons/FacebookIcon.png"/*Importando ícone do facebook*/
+import InstaIcon from "../../public/icons/InstaIcon.png"/*Importando ícone do Instagram*/
+import TwitterIcon from "../../public/icons/TwitterIcon.png"/*Importando ícone do Twitter*/
 export default function Footer(){
-    
     return(
         <footer className="bg-gradient-to-t from-roxoEscuro to-roxoClaro h-[270px] md:h-[450px] w-full text-cinza md-w-full mm:h-[840px]">{/* RODAPÉ PRINCIPAL */}
             <div className="w-full p-2 flex justify-between max-w-[1700px] mx-auto items-center md-w-full md:flex-col md:items-center">{/* DIV PRINCIPAL */}
