@@ -31,8 +31,12 @@ const config: Config = {
       colors: {
         'roxoEscuro': '#3F189E',
         'laranja' : '#FA6600',
+        'laranjaClaro' : '#FF9348',
         'roxoClaro' : '#6948BA',
         'cinza' : '#F0F2F5',
+        'branco' : '#ffffff',
+        'preto' : '#000000',
+        'roxobg' : '#E0E7FF'
       },
       keyframes: {
         showSideBar:{

@@ -2,7 +2,6 @@ import BlockIcon from "../../public/icons/BlockIcon.png"
 import PcIcon from "../../public/icons/PcIcon.png"
 import HeartICon from "../../public/icons/HeartICon.png"
 import BackIcons from "../../public/images/BackICons.png"
-import backIcons from "../../public/images/backICon.png"
 import Image from "next/image"
 
 export default function AboutUs(){
@@ -22,18 +21,15 @@ export default function AboutUs(){
                     <Image src={HeartICon} alt="Ícone de coração" className="pt-12"/>
                     <Image src={PcIcon} alt="Ícone de computador" className="pt-12"/>
                 </div>
-                <div className="hidden w-full lg:h-[75px] lg:flex lg:absolute lg:mt-[650px]">
-                    <Image src={backIcons} alt="Imagem de fundo" />
+            </div>
+            <div className="w-full flex justify-end lg:justify-center md:text-center">
+                <p className="text-3xl w-[600px] my-24 md:text-2xl">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal.</p>
+            </div>
+            <div className="bg-laranja hidden lg:flex lg:flex-row justify-between lg:mx-auto lg:w-full lg:h-32 lg:items-center">
+                    <Image src={BlockIcon} alt="Ícone de cadeado" className="h-14 w-14"/>
+                    <Image src={HeartICon} alt="Ícone de coração" className="h-14 w-14"/>
+                    <Image src={PcIcon} alt="Ícone de computador" className="h-14 w-14"/>
                 </div>
-            </div>
-            <div className="w-full flex justify-end lg:justify-center">
-                <p className="text-3xl w-[600px] mt-24 md:text-lg">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal.</p>
-            </div>
-            <div className="hidden absolute lg:bottom-4 lg:flex lg:flex-row justify-between lg:mx-auto lg:w-full">
-                <Image src={BlockIcon} alt="Ícone de cadeado" className="h-14 w-14"/>
-                <Image src={HeartICon} alt="Ícone de coração" className="h-14 w-14"/>
-                <Image src={PcIcon} alt="Ícone de computador" className="h-14 w-14"/>
-            </div>
         </div>
     )
 
