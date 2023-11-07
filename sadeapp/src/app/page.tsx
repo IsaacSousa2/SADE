@@ -5,11 +5,12 @@ import Achievements from "@/components/achievements";/*Importando componente do 
 import Contacts from "@/components/contacts";/*Importando componente do contatos*/
 
 
+
 export default function Home() {
   return (
 
     <div>
-      <p>5 componentes prontos!</p>
+      
     </div>
 
   )
