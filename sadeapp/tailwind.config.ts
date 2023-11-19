@@ -34,6 +34,7 @@ const config: Config = {
         'laranjaClaro' : '#FF9348',
         'roxoClaro' : '#6948BA',
         'cinza' : '#F0F2F5',
+        'cinzaEscuro' : '#737373',
         'branco' : '#ffffff',
         'preto' : '#000000',
         'roxobg' : '#E0E7FF'

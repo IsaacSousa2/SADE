@@ -1,16 +1,19 @@
-import Header from "@/components/header";/*Importando componente do cabeçalho*/
-import Footer from "@/components/footer";/*Importando componente do rodapé*/
-import AboutUs from "@/components/about";/*Importando componente do sobre nós*/
-import Achievements from "@/components/achievements";/*Importando componente do conquistas*/
-import Contacts from "@/components/contacts";/*Importando componente do contatos*/
+import AboutUs from "@/components/AboutUs/about";/*Importando componente do sobre nós*/
+import Achievements from "@/components/Achievements/achievements";/*Importando componente do conquistas*/
+import Contacts from "@/components/Contacts/contacts";/*Importando componente do contatos*/
+import { Differences } from "@/components/differentiators/Component/differences";
+import Header from "@/components/Header/header";/*Importando componente do cabeçalho*/
 
 
 
 export default function Home() {
   return (
 
-    <div>
-      
+    <div className="mb-36">
+      <Header />
+      <Contacts />
+      <Achievements />
+      <Differences />
     </div>
 
   )

@@ -1,8 +1,8 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
-import logoBranco from "../../public/images/logoBranco.png"/*Importando logo*/
-import menuHamburguer from "../../public/images/menuHamburguer.png"/*Importando menu hamburguer*/
-import xIcon from "../../public/images/xIcon.png"/*Importando icone de fechar*/
+import logoBranco from "../../../public/images/logoBranco.png"/*Importando logo*/
+import menuHamburguer from "../../../public/images/menuHamburguer.png"/*Importando menu hamburguer*/
+import xIcon from "../../../public/images/xIcon.png"/*Importando icone de fechar*/
 import { useState } from "react";/*Importando hook useState*/
 export default function Header(){
     const[menuAtivado, setMenuAtivado] = useState(false);/* */
