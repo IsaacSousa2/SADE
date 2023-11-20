@@ -5,8 +5,8 @@ import ImgMessage from "../../../../public/icons/DifferencesIcons//MessageICon.p
 import ImgPc from "../../../../public/icons/DifferencesIcons//PcIcon.png"
 import ImgPillIcon from "../../../../public/icons/DifferencesIcons//PillIcon.png"
 import ImgSecurity from "../../../../public/icons/DifferencesIcons//SecurityIcon.png"
-import {DifferentialBadge} from "@/components/differentiators/Boxes/differentialBadges"
-import {DifferentialBadgePurple} from "@/components/differentiators/Boxes/differentialcolor"
+import {DifferentialBadge} from "@/components/Differentials/Boxes/differentialBadges"
+import {DifferentialBadgePurple} from "@/components/Differentials/Boxes/differentialcolor"
 
 
 export const Differences = () => {

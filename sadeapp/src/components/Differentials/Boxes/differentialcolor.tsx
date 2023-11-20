@@ -15,13 +15,13 @@ export const DifferentialBadgePurple = ({url, titulo, texto} : DifferentialProps
                 <div className=""><Image src={url} alt="Imagem de Pasta" width={60} height={60} /></div>
                 <div className="text-2xl text-branco">{titulo}</div>
                 <div className="text-branco">{texto}</div>
-                {/*
+              {/* 
                 <div>
                     <a href="#">
-                        <button className="bg-branco text-roxoEscuro w-[140px] h-[40px] rounded-md hover:bg-roxoClaro  duration-[0.7s]">Leia Mais</button>
+                        <Button className="bg-branco text-roxoEscuro w-[140px] h-[40px] rounded-md hover:bg-roxoClaro  duration-[0.7s]">Leia Mais</Button>
                     </a>
                 </div>
-                */} {/*Botão*/}
+                 */} {/*Botão*/}
                 
             </div>
         </div>
