@@ -12,7 +12,12 @@ export default function Home() {
   return (
 
     <div className="">
-      <Search />
+      <Header />
+      <Achievements />
+      <AboutUs />
+      <Contacts />
+      <Differences />
+      <Footer />
     </div>
 
   )
