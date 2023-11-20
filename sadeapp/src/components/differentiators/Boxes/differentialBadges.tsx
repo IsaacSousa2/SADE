@@ -1,11 +1,13 @@
 'use client'
-import Image, { StaticImageData } from "next/image"
-import { Button } from "../../Button/button"
+import Image, { StaticImageData } from "next/image";
+import { Button } from "../../Button/page";
 
 type DifferentialProps = {
-    url: StaticImageData,
+
+    url: StaticImageData;
     titulo : string;
     texto : string;
+    
 }
 
 export const DifferentialBadge = ({url, titulo, texto} : DifferentialProps) => {

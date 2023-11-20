@@ -1,6 +1,6 @@
 'use client'
 import Image, { StaticImageData } from "next/image"
-import { Button } from "../../Button/button"
+import { Button } from "../../Button/page"
 
 type DifferentialProps = {
     url: StaticImageData,
