@@ -29,15 +29,13 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'roxoEscuro': '#3F189E',
-        'laranja' : '#FA6600',
-        'laranjaClaro' : '#FF9348',
-        'roxoClaro' : '#6948BA',
-        'cinza' : '#F0F2F5',
-        'cinzaEscuro' : '#737373',
-        'branco' : '#ffffff',
-        'preto' : '#000000',
-        'roxobg' : '#E0E7FF'
+        'darkPurple': '#3F189E',
+        'darkOrange' : '#FA6600',
+        'lightOrange' : '#FF9348',
+        'lightPurple' : '#6948BA',
+        'grayMain' : '#F0F2F5',
+        'darkGray' : '#737373',
+        'purpleBg' : '#E0E7FF'
       },
       keyframes: {
         showSideBar:{
@@ -49,10 +47,6 @@ const config: Config = {
           '0%' :{ transform: 'translateY(-400)', opacity:'0'},
         },
       },
-      animation:{
-        "showsidebar": "showSideBar 0.5s linear",
-        "removesidebar": "removeSideBar 0.5s linear"
-      }
     },
   },
   plugins: [],
