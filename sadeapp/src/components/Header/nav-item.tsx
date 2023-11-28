@@ -2,14 +2,12 @@ import Link from "next/link";
 
 type NavItemProps = {
     label : string
-    href : string
-    image : string
+    link : string
 }
 
-export const NavItem = ({label, href, image}: NavItemProps ) => {
+export const NavItem = ({label, link}: NavItemProps ) => {
     return(
-        <Link href={href}>
-            <span className="">{image}</span>
+        <Link href={link}>
             {label}
         </Link>
     )

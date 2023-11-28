@@ -7,6 +7,7 @@ import { IoMdHome } from "react-icons/io";
 import { FaDesktop } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiDiamonds } from "react-icons/gi";
+import { NavItem } from "./nav-item"
 import { useState } from "react";/*Importando hook useState*/
 
 export default function Header(){
@@ -30,7 +31,7 @@ export default function Header(){
 
                 </div>
 
-                <div id="menu" className={`mr-9 lg:mr-0 lg:gap-3 transition-all text-white flex gap-7 md:gap-28 items-center md:flex-col md:right-[0] md:top-0 ${menuAtivado? 'animate-showSideBar duration-[0.7s] backdrop-blur-sm mr-[-1px] md:bg-darkOrange md:absolute md:w-52 md:h-full md:mr-0' : 'duration-[0.7s] md:hidden md:mr-[-400px]'}}`}>{/* DIV DE LINKS */}
+                <div id="menu" className={`mr-9 lg:mr-0 lg:gap-3 transition-all text-white flex gap-7 md:gap-28 items-center md:flex-col md:right-[0] md:top-0 ${menuAtivado? 'animate-showSideBar transition-all duration-[0.7s] backdrop-blur-sm mr-[-1px] md:bg-darkOrange md:absolute md:w-52 md:h-full md:mr-0' : 'md:hidden md:mr-[-400px]'}}`}>{/* DIV DE LINKS */}
 
                     <button className="items-center hidden md:block justify-center border-1 font-bold" onClick={abrirMenu}>{/* FECHAR MENU HAMBURGUER */}
 

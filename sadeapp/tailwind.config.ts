@@ -40,7 +40,7 @@ const config: Config = {
       keyframes: {
         showSideBar:{
           '0%': { transform: 'translateY(-400px)', opacity: '0' },
-        '100%': { transform: 'translateY(0px)', opacity: '1' },
+        '100%': { transform: 'translateY(0px)', opacity: '1', TransitionEvent: '0.7s' },
         },
         removeSideBar:{
         '100%' :{ transform: 'translateY(0px)', opacity:'1'},
