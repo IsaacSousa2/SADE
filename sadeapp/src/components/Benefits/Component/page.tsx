@@ -13,15 +13,25 @@ export const Benefits = () => {
     return(
 
         <div>
-            <Title />
-            <div className="items-center justify-center flex w-full max-w-[1500px] mx-auto">
-                <div className="grid grid-cols-4 xl:grid-cols-2 md:flex md:flex-wrap justify-center gap-y-24 gap-x-24">
-                    <BenefitsBadge url={CheckIcon} titulo={"Segurança"} texto={"Altos padrões de segurança de dados, incluindo criptografia, autenticação, conformidade com regulamentações e atualizações constantes."} />
-                    <BenefitsBadgeOrange url={TellIcon} titulo={"Suporte"} texto={"Fornecer suporte técnico ágil e eficaz, juntamente com treinamento especializado para os usuários garantindo uma melhor experiência."} />
-                    <BenefitsBadge url={GalleryIcon} titulo={"Resolução"} texto={"A capacidade de integração eficiente e perfeita com uma ampla gama de equipamentos de imagem para amplificar as possibilidades do usuário."} />
-                    <BenefitsBadge url={ClockIcon} titulo={"Tempo"} texto={"Um software SADE que seja intuitivo e fácil de usar, com uma interface amigável, pode melhorar a eficiência da equipe e facilitar o uso de ferramentas."} />
+
+            <Title />{/*COMPONENT DE TITULO*/}
+
+            <div className="items-center justify-center flex w-full max-w-[1500px] mx-auto">{/*DIV PARA ORGANIZAÇÃO DE BOXES*/}
+
+                <div className="grid grid-cols-4 xl:grid-cols-2 md:flex md:flex-wrap justify-center gap-y-24 gap-x-24">{/*DIV PARA ALINHAMENTO*/}
+
+                    <BenefitsBadge url={CheckIcon} titulo={"Segurança"} texto={"Altos padrões de segurança de dados, incluindo criptografia, autenticação, conformidade com regulamentações e atualizações constantes."} />{/*BOX*/}
+
+                    <BenefitsBadgeOrange url={TellIcon} titulo={"Suporte"} texto={"Fornecer suporte técnico ágil e eficaz, juntamente com treinamento especializado para os usuários garantindo uma melhor experiência."} />{/*BOX COLORIDO*/}
+
+                    <BenefitsBadge url={GalleryIcon} titulo={"Resolução"} texto={"A capacidade de integração eficiente e perfeita com uma ampla gama de equipamentos de imagem para amplificar as possibilidades do usuário."} />{/*BOX*/}
+
+                    <BenefitsBadge url={ClockIcon} titulo={"Tempo"} texto={"Um software SADE que seja intuitivo e fácil de usar, com uma interface amigável, pode melhorar a eficiência da equipe e facilitar o uso de ferramentas."} />{/*BOX*/}
+
                 </div>
+
             </div>
+
         </div>
         
     )

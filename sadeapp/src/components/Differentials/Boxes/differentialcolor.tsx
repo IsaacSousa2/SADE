@@ -10,11 +10,18 @@ type DifferentialProps = {
 
 export const DifferentialBadgePurple = ({url, titulo, texto} : DifferentialProps) => {
     return(
-        <div className="text-white bg-gradient-to-t from-darkPurple to-lightPurple rounded-xl flex  border-[1px] w-[290px] h-[310px] items-center justify-center font-semibold">
-            <div className="flex flex-col gap-y-3 items-center max-w-[270px] mx-auto p-3 text-center">
-                <div className=""><Image src={url} alt="´=Icone de diferencial" width={60} height={60} /></div>
-                <div className="text-2xl text-branco">{titulo}</div>
-                <div className="text-branco">{texto}</div>
+
+        <div className="text-white bg-gradient-to-t from-darkPurple to-lightPurple rounded-xl flex  border-[1px] w-[290px] h-[310px] items-center justify-center font-semibold">{/*DIV PRIMARIA*/}
+
+            <div className="flex flex-col gap-y-3 items-center max-w-[270px] mx-auto p-3 text-center">{/*DIV SECUNDARIA*/}
+
+                <div className=""><Image src={url} alt="´=Icone de diferencial" 
+                width={60} height={60} /></div>{/*IMAGEM DO BOX*/}
+
+                <div className="text-2xl text-branco">{titulo}</div>{/*TITULO OD BOX*/}
+
+                <div className="text-branco">{texto}</div>{/*TEXTO DO BOX*/}
+
               {/* 
                 <div>
                     <a href="#">
@@ -24,6 +31,7 @@ export const DifferentialBadgePurple = ({url, titulo, texto} : DifferentialProps
                  */} {/*Botão*/}
                 
             </div>
+
         </div>
     )
 }

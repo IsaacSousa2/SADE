@@ -1,3 +1,4 @@
+/*COMPONENT DE TITULO */
 export const Title = () => {
 
     return(
