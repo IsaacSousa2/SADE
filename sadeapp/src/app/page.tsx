@@ -1,5 +1,5 @@
 import AboutUs from "@/components/AboutUs/page";/*Importando componente do sobre nós*/
-import Achievements from "@/components/Achievements/page";/*Importando componente do conquistas*/
+import { Achievements } from "@/components/Achievements/page";;/*Importando componente do conquistas*/
 import Contacts from "@/components/Contacts/page";/*Importando componente do contatos*/
 import { Differences } from "@/components/Differentials/Component/page";
 import Footer from "@/components/Footer/footer";
