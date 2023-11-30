@@ -1,6 +1,6 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
-import logoBranco from "../../../public/images/logoBranco.png"/*Importando logo*/
+import logoBranco from "../../../public/images/Logo/logoBranco.png"/*Importando logo*/
 import { MdMenu } from "react-icons/md";/*Importando menu hamburguer*/
 import { IoCloseSharp } from "react-icons/io5";/*Importando icone de fechar*/
 import { IoMdHome } from "react-icons/io";
@@ -23,7 +23,7 @@ export default function Header(){
     return(
         <header className=" w-full h-16 items-center border-b-white" id="Header">{/* HEADER */}
 
-            <div className=" bg-darkOrange w-[95%] rounded-lg p-2 flex justify-between max-w-[1700px] mx-auto">{/* DIV PRINCIPAL */}
+            <div className=" bg-darkOrange w-[95%] rounded-lg p-2 flex justify-between max-w-[1750px] mx-auto">{/* DIV PRINCIPAL */}
 
                 <div className="ml-9"> {/* LOGO SADE BRANCO */}
 
@@ -41,22 +41,22 @@ export default function Header(){
 
                     <div className="flex gap-[2px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
                         <IoMdHome className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-xl font-bold">HOME</a>{/* LINK */}
+                        <a href="#" className="duration-[0.5s] text-lg font-bold">HOME</a>{/* LINK */}
                     </div>
 
                     <div className="flex gap-[2px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
                         <GiDiamonds className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-xl font-bold">PLANOS</a>{/* LINK */}
+                        <a href="#" className="duration-[0.5s] text-lg font-bold">PLANOS</a>{/* LINK */}
                     </div>
 
                     <div className="flex gap-[6px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
                         <FaDesktop className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-xl font-bold ">INFORMAÇÕES</a>{/* LINK */}
+                        <a href="#" className="duration-[0.5s] text-lg font-bold ">INFORMAÇÕES</a>{/* LINK */}
                     </div>
 
                     <div className="flex gap-[6px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
                         <BsTelephoneFill className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-xl font-bold">CONTATO</a>{/* LINK */}
+                        <a href="#" className="duration-[0.5s] text-lg font-bold">CONTATO</a>{/* LINK */}
                     </div>
 
 
