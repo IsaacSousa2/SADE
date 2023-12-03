@@ -1,3 +1,4 @@
+import Introducao from "@/components/Introducao";
 import AboutUs from "@/components/AboutUs/page";/*Importando componente do sobre nós*/
 import { Achievements } from "@/components/Achievements/page";;/*Importando componente do conquistas*/
 import Contacts from "@/components/Contacts/page";/*Importando componente do contatos*/
@@ -13,6 +14,10 @@ export default function Home() {
 
     <div className="">
        <Header />
+       <Introducao/>
+       
+       <Differences/>
+       <Benefits/>
     </div>
 
   )

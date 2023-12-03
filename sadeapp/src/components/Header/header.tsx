@@ -2,8 +2,9 @@
 import Image from "next/image"/*Importando o hook Image*/
 import logoBranco from "../../../public/images/Logo/logoBranco.png"/*Importando logo*/
 import { MdMenu } from "react-icons/md";/*Importando menu hamburguer*/
+import { IoMdCloseCircle } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";/*Importando icone de fechar*/
-import { IoMdHome } from "react-icons/io";
+import { RiHome5Fill } from "react-icons/ri";
 import { FaDesktop } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiDiamonds } from "react-icons/gi";
@@ -12,68 +13,88 @@ import { useState } from "react";/*Importando hook useState*/
 
 export default function Header(){
 
-    const[menuAtivado, setMenuAtivado] = useState(false);/* */
+    const[menuAtivado, setMenuAtivado] = useState(true);
 
     function abrirMenu() {
 
         if (menuAtivado == false) {setMenuAtivado(true);}
 
-        else {setMenuAtivado(false);}}/*estrutura de condição para menu hamburguer*/
+        else {setMenuAtivado(false);}
+    }/*estrutura de condição para menu hamburguer*/
 
     return(
-        <header className=" w-full h-16 items-center border-b-white" id="Header">{/* HEADER */}
 
-            <div className=" bg-darkOrange w-[95%] rounded-lg p-2 flex justify-between max-w-[1750px] mx-auto">{/* DIV PRINCIPAL */}
+        <>
 
-                <div className="ml-9"> {/* LOGO SADE BRANCO */}
+            <div className="fixed w-full px-5 ">
 
-                    <Image src={logoBranco} alt={"Logo Sade Branco"} className=""/>
+                <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl">
 
-                </div>
+                    <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" className="w-16"/> {/*Logo*/}
 
-                <div id="menu" className={`mr-9 lg:mr-0 lg:gap-3 transition-all text-white flex gap-5 md:gap-28 items-center md:flex-col md:right-[0] md:top-0 ${menuAtivado? 'animate-showSideBar transition-all duration-[0.7s] backdrop-blur-sm mr-[-1px] md:bg-darkOrange md:absolute md:w-52 md:h-full md:mr-0' : 'md:hidden md:mr-[-400px]'}}`}>{/* DIV DE LINKS */}
+                    <div className="flex items-center gap-2 md:hidden">
 
-                    <button className="items-center hidden md:block justify-center border-1 font-bold" onClick={abrirMenu}>{/* FECHAR MENU HAMBURGUER */}
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                        <IoCloseSharp alt="Icone para fechar" className="text-3xl text-white mt-5 " />
+                            <RiHome5Fill className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Home</p>
+                        </div> {/*Btn home*/}
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                    </button>
+                            <GiDiamonds className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Planos</p>
+                        </div> {/*Btn planos*/}
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                    <div className="flex gap-[2px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
-                        <IoMdHome className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-lg font-bold">HOME</a>{/* LINK */}
-                    </div>
+                            <FaDesktop className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Como usar</p>
+                        </div> {/*Btn como usar*/}
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                    <div className="flex gap-[2px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
-                        <GiDiamonds className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-lg font-bold">PLANOS</a>{/* LINK */}
-                    </div>
+                            <BsTelephoneFill className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Contato</p>
+                        </div> {/*Btn contato*/}
 
-                    <div className="flex gap-[6px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
-                        <FaDesktop className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-lg font-bold ">INFORMAÇÕES</a>{/* LINK */}
-                    </div>
+                    </div> {/*Btns*/}
 
-                    <div className="flex gap-[6px] justify-center hover:bg-lightOrange p-[6px] rounded-md duration-[0.7s]">
-                        <BsTelephoneFill className="text-2xl items-center" />
-                        <a href="#" className="duration-[0.5s] text-lg font-bold">CONTATO</a>{/* LINK */}
-                    </div>
-
+                    <MdMenu onClick={abrirMenu} className="hidden md:flex text-3xl cursor-pointer text-white duration-[0.2s] p-1 rounded-lg hover:bg-lightOrange"/> {/*Btn para abrir menu*/}
 
                 </div>
 
-                <div className="items-center hidden md:block">{/* MENU HAMBURGUER */}
+            </div> {/*Header*/}
 
-                    <button className="items-center hidden md:block justify-center mt-2" onClick={abrirMenu}>
+            <div className={`fixed flex flex-col p-3 items-center bg-darkOrange w-[300px] h-screen mt-[-65px] mdMin:hidden duration-[0.2s] ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
-                        <MdMenu alt="menu Hamburguer" className="text-white text-2xl" />
+                <IoMdCloseCircle onClick={abrirMenu} className="absolute right-2 text-white text-3xl"/>
 
-                    </button>
+                <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" className="w-16"/> {/*Logo*/}
 
-                </div> 
+                <div className="flex flex-col gap-2 mt-20">
 
-            </div>
+                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-        </header>
+                        <RiHome5Fill className="text-2xl text-white"/> 
+                        <p className="text-white font-bold uppercase">Home</p>
+                    </div> {/*Btn home*/}
+                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+
+                        <GiDiamonds className="text-2xl text-white"/> 
+                        <p className="text-white font-bold uppercase">Planos</p>
+                    </div> {/*Btn planos*/}
+                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+
+                        <FaDesktop className="text-2xl text-white"/> 
+                        <p className="text-white font-bold uppercase">Como usar</p>
+                    </div> {/*Btn como usar*/}
+                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+
+                        <BsTelephoneFill className="text-2xl text-white"/> 
+                        <p className="text-white font-bold uppercase">Contato</p>
+                    </div> {/*Btn contato*/}
+
+                </div> {/*Btns*/}
+            </div> {/*Header para telas menores*/}
+
+        </>
     )
 }
