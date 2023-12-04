@@ -1,22 +1,21 @@
 'use client'
-import Image, { StaticImageData } from "next/image"
-import { Button } from "../../Button/page"
+import { IconBaseProps } from 'react-icons'
+/*import { Button } from "../../Button/page"*/
 
 type DifferentialProps = {
-    url: StaticImageData,
+    icon: IconBaseProps,
     titulo : string;
     texto : string;
 }
 
-export const DifferentialBadgePurple = ({url, titulo, texto} : DifferentialProps) => {
+export const DifferentialBadgePurple = ({icon, titulo, texto} : DifferentialProps) => {
     return(
 
         <div className="text-white bg-gradient-to-t from-darkPurple to-lightPurple rounded-xl flex  border-[1px] w-[290px] h-[310px] items-center justify-center font-semibold">{/*DIV PRIMARIA*/}
 
             <div className="flex flex-col gap-y-3 items-center max-w-[270px] mx-auto p-3 text-center">{/*DIV SECUNDARIA*/}
 
-                <div className=""><Image src={url} alt="´=Icone de diferencial" 
-                width={60} height={60} /></div>{/*IMAGEM DO BOX*/}
+                <div className=""><>{icon}</></div>{/*IMAGEM DO BOX*/}
 
                 <div className="text-2xl text-branco">{titulo}</div>{/*TITULO OD BOX*/}
 

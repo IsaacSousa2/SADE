@@ -12,12 +12,14 @@ import { Benefits } from "@/components/Benefits/Component/page"
 export default function Home() {
   return (
 
-    <div className="">
+    <div className="gap-y-24">
        <Header />
        <Introducao/>
-       
        <Differences/>
+       <Contacts />
        <Benefits/>
+       <Achievements />
+       <Footer />
     </div>
 
   )

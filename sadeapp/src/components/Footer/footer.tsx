@@ -1,6 +1,6 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
-import logoBranco from "../../../public/images/logoBranco.png"/*Importando logo*/
+import logoBranco from "../../../public/images/Logo/logoBranco.png"/*Importando logo*/
 import FacebookIcon from "../../../public/icons/FooterIcons/FacebookIcon.png"/*Importando ícone do facebook*/
 import InstaIcon from "../../../public/icons/FooterIcons/InstaIcon.png"/*Importando ícone do Instagram*/
 import TwitterIcon from "../../../public/icons/FooterIcons/TwitterIcon.png"/*Importando ícone do Twitter*/
