@@ -3,7 +3,7 @@ import PurpleInsta from "../../../public/icons/ContactIcons/PurpleInsta.png";{/*
 import PurpleTwitter from "../../../public/icons/ContactIcons/PurpleTwitter.png";{/*IMPORTANDO ICONE DO TWITTER*/}
 import Image from "next/image";
 
-export default function Contacts(){
+export const Contacts = () => {
 
     return(
 

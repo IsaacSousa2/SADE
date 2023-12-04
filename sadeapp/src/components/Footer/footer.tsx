@@ -5,7 +5,7 @@ import FacebookIcon from "../../../public/icons/FooterIcons/FacebookIcon.png"/*I
 import InstaIcon from "../../../public/icons/FooterIcons/InstaIcon.png"/*Importando ícone do Instagram*/
 import TwitterIcon from "../../../public/icons/FooterIcons/TwitterIcon.png"/*Importando ícone do Twitter*/
 
-export default function Footer(){
+export const Footer = () => {
     
     return(
         <footer className="bg-gradient-to-t from-darkPurple to-lightPurple h-[270px] md:h-[450px] w-full text-grayMain md-w-full mm:h-[840px]">{/* RODAPÉ PRINCIPAL */}

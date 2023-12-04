@@ -9,7 +9,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { GiDiamonds } from "react-icons/gi";
 import { useState } from "react";/*Importando hook useState*/
 
-export default function Header(){
+export const Header = () => {
 
     const[menuAtivado, setMenuAtivado] = useState(true);
 
@@ -67,10 +67,15 @@ export default function Header(){
                 </div>
 
             </div> {/*Header*/}
-            
-            <div className={`fixed flex flex-col p-3 items-center bg-darkOrange w-[300px] h-screen mt-[-65px] mdMin:hidden duration-[0.2s] justify-center ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
-            <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" className="w-16 absolute -mt-[1250px]"/> {/*Logo*/}
+            
+
+            <div className={`fixed flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
+
+            <div>
+                <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}
+            </div>
+
 
                 <div className="flex flex-col gap-12 mt-20">
 
@@ -103,6 +108,10 @@ export default function Header(){
                     </div> {/*Btn contato*/}
 
                 </div> {/*Btns*/}
+
+                <div onClick={fecharMenu} className="text-white">
+                    <IoMdCloseCircle className="text-3xl" />
+                </div>
 
             </div> {/*Header para telas menores*/}   
 
