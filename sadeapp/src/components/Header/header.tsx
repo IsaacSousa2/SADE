@@ -31,7 +31,7 @@ export const Header = () => {
 
         <>
 
-            <div className="fixed w-full px-5 ">
+            <div className="w-full px-5 ">
 
                 <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl">
 
@@ -68,9 +68,7 @@ export const Header = () => {
 
             </div> {/*Header*/}
 
-            
-
-            <div className={`fixed flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
+            <div className={`fixed top-0 flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
             <div>
                 <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}

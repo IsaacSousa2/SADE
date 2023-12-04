@@ -3,24 +3,24 @@ import Image from "next/image"
 import BackIcons from "../../../public/images/Backgrounds/BackICons.png"
 import SadeImage from "../../../public/images/Logo/logoSade.png"
 
-export default function AboutUs(){
+export const AboutUs = () => {
 
     return(
-        <div>
+        <div className="">
             <Title />
-            <div className="items-center justify-center flex flex-col">
+            <div className="gap-y-16 flex flex-col">
+                <div className="flex justify-center p-10">
+                    <Image src={SadeImage} alt="Imagem do Software" className="w-full max-w-[400px]" />
+                </div>
+                <div className="flex justify-center p-10">
+                    <p className="mt-24 z-40 w-full max-w-[1000px] font-semibold text-xl">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal. Na essência do nosso propósito está a missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
+                </div>
+                <div className="-mt-72 lg:hidden">
+                    <Image src={BackIcons} alt="" className="w-full max-w-[800px]" />
+                </div>
                 <div className="">
-                    <Image src={SadeImage} alt="Imagem do Software" className="w-full h-full max-w-[800px] max-h-[450px] m-auto" />
+                    <div className="hidden lg:flex h-[160px] w-full bg-gradient-to-t from-darkOrange to-lightOrange"></div>
                 </div>
-                <div className="" >
-                    <p className="flex w-full max-w-[900px] mx-auto px-4 text-xl font-semibold py-16">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal. Na essência do nosso propósito está a missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
-                </div>
-            </div>
-            <div className="lg:hidden flex mt-[-400px]">
-                <Image src={BackIcons} alt="Plano de fundo" className="fixed -z-50"/>
-            </div>
-            <div>
-                <div className="hidden lg:flex h-[160px] w-full bg-gradient-to-t from-darkOrange to-lightOrange"></div>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ type DifferentialProps = {
 export const BenefitsBadgeOrange = ({icon, titulo, texto} : DifferentialProps) => {
     return(
 
-        <div className="text-white bg-gradient-to-t from-darkOrange to-lightOrange rounded-xl flex  border-[1px] w-[290px] h-[330px] items-center justify-center font-semibold">{/*DIV PRIMARIA*/}
+        <div className="text-white bg-gradient-to-t from-darkOrange to-lightOrange rounded-xl flex  border-[1px] w-[263px] h-[330px] items-center justify-center font-semibold">{/*DIV PRIMARIA*/}
 
             <div className="flex flex-col gap-y-6 items-center max-w-[250px] text-center mx-auto p-3">{/*DIV SECUNDARIA*/}
 
