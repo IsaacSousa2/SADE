@@ -8,7 +8,7 @@ import TwitterIcon from "../../../public/icons/FooterIcons/TwitterIcon.png"/*Imp
 export const Footer = () => {
     
     return(
-        <footer className="bg-gradient-to-t from-darkPurple to-lightPurple h-[270px] md:h-[450px] w-full text-grayMain md-w-full mm:h-[840px]">{/* RODAPÉ PRINCIPAL */}
+        <footer className="mt-12 bg-gradient-to-t from-darkPurple to-lightPurple h-[270px] md:h-[450px] w-full text-grayMain md-w-full mm:h-[840px]">{/* RODAPÉ PRINCIPAL */}
             <div className="w-full p-2 flex justify-between max-w-[1700px] mx-auto items-center md-w-full md:flex-col md:items-center">{/* DIV PRINCIPAL */}
                 <div>
                     <div className="flex flex-col md:items-center">{/* DIV ITENS */}

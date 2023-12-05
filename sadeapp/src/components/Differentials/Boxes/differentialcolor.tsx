@@ -19,7 +19,7 @@ export const DifferentialBadgePurple = ({icon, titulo, texto} : DifferentialProp
 
                 <div className="text-2xl text-branco">{titulo}</div>{/*TITULO OD BOX*/}
 
-                <div className="text-branco">{texto}</div>{/*TEXTO DO BOX*/}
+                <div className="text-branco text-justify indent-10">{texto}</div>{/*TEXTO DO BOX*/}
 
               {/* 
                 <div>

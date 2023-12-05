@@ -11,27 +11,18 @@ import { useState } from "react";/*Importando hook useState*/
 
 export const Header = () => {
 
-    const[menuAtivado, setMenuAtivado] = useState(true);
+    const[menuAtivado, setMenuAtivado] = useState(false);
 
     function abrirMenu() {
 
-        if (menuAtivado == false) {setMenuAtivado(true);}
+        menuAtivado ? setMenuAtivado(false) : setMenuAtivado(true);
+    }
 
-        else {setMenuAtivado(false);}
-    }/*estrutura de condição para menu hamburguer*/
-
-    function fecharMenu() {
-
-        if (menuAtivado == true) {setMenuAtivado(false);}
-
-        else {setMenuAtivado(false);}
-    }/*estrutura de condição para fechar menu hamburguer*/
-
-    return(
+     return(
 
         <>
 
-            <div className="w-full px-5 ">
+            <div className="z-10 fixed w-full px-2 pt-2">
 
                 <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl">
 
@@ -107,7 +98,7 @@ export const Header = () => {
 
                 </div> {/*Btns*/}
 
-                <div onClick={fecharMenu} className="text-white">
+                <div onClick={abrirMenu} className="text-white">
                     <IoMdCloseCircle className="text-3xl" />
                 </div>
 

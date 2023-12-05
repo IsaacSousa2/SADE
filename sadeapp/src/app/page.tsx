@@ -6,6 +6,7 @@ import { Differences } from "@/components/Differentials/Component/page";
 import { Footer } from "@/components/Footer/footer";
 import { Header } from "@/components/Header/header";/*Importando componente do cabeçalho*/
 import { Benefits } from "@/components/Benefits/Component/page"
+import Planos from "@/components/Planos";
 
 
 
@@ -15,10 +16,11 @@ export default function Home() {
     <div className="">
        <Header />
        <Introducao/>
-       <Differences/>
-       <AboutUs />
        <Contacts />
+       <AboutUs />
+       <Differences/>
        <Benefits/>
+       <Planos/>
        <Achievements />
        <Footer />
     </div>

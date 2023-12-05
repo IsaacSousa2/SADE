@@ -6,7 +6,6 @@ import { FaClock } from "react-icons/fa";/*Imagem de relógio */
 import { MdInsertPhoto } from "react-icons/md";/*Imagem de galeira */
 import { FaPhoneAlt } from "react-icons/fa";/*Imagem de telefone */
 
-
 export const Benefits = () => {
 
     return(
@@ -17,7 +16,7 @@ export const Benefits = () => {
 
             <div className="items-center justify-center flex w-full max-w-[1500px] mx-auto">{/*DIV PARA ORGANIZAÇÃO DE BOXES*/}
 
-                <div className="grid grid-cols-4 xl:grid-cols-2 md:flex md:flex-wrap justify-center gap-y-24 gap-x-24">{/*DIV PARA ALINHAMENTO*/}
+                <div className="grid grid-cols-4 xl:grid-cols-2 md:flex md:flex-wrap justify-center px-5 md:gap-y-12 md:gap-x-12 gap-y-32 gap-x-32">{/*DIV PARA ALINHAMENTO*/}
 
                     <BenefitsBadgeOrange icon={ <FaCheckDouble size={50} /> } titulo={"Segurança"} texto={"Altos padrões de segurança de dados, incluindo criptografia, autenticação, conformidade com regulamentações e atualizações constantes."} />{/*BOX*/}
 

@@ -19,7 +19,7 @@ export const Differences = () => {
 
             <div className="items-center justify-center flex w-full max-w-[1500px] mx-auto">{/*DIV PRIMARIA */}
 
-                <div className="grid grid-cols-3 xl:grid-cols-2 md:flex md:flex-wrap md:gap-y-24 justify-center gap-y-32 gap-x-36">{/*DIV SECUNDARIA */}
+                <div className="grid grid-cols-3 xl:grid-cols-2 md:flex md:flex-wrap md:gap-y-12 md:gap-x-12 px-5 justify-center gap-y-32 gap-x-32">{/*DIV SECUNDARIA */}
 
                     <DifferentialBadgePurple icon={<FaFolder size={50} className="font-bold" />} titulo={"Acessibilidade"} texto={"Capacidade de integração com sistemas de prontuário eletrônico, laboratórios, sistemas de diagnóstico por imagem e outros componentes do ecossistema de saúde."} />{/*BOX DE DIFERENCIAL */}
 

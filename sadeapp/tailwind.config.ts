@@ -36,6 +36,9 @@ const config: Config = {
           '0%' :{ transform: 'translateY(-400)', opacity:'0'},
         },
       },
+      boxShadow: {
+        'shadowContacts': '0px 0px 40px 5px rgba(63, 24, 158, 0.6)',
+      }
     },
   },
   plugins: [],
