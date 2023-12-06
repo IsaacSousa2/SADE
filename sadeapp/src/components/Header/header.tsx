@@ -1,5 +1,6 @@
 'use client'/*Transformando em client components*/ 
 import Image from "next/image"/*Importando o hook Image*/
+import Link from "next/link";
 import logoBranco from "../../../public/images/Logo/logoBranco.png"/*Importando logo*/
 import { MdMenu } from "react-icons/md";/*Importando menu hamburguer*/
 import { IoMdCloseCircle } from "react-icons/io";
@@ -22,7 +23,7 @@ export const Header = () => {
 
         <>
 
-            <div className="z-10 fixed w-full px-2 pt-2">
+            <div className="z-10 fixed w-full px-2 pt-2 drop-shadow-md">
 
                 <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl">
 
@@ -30,21 +31,25 @@ export const Header = () => {
 
                     <div className="flex items-center gap-2 md:hidden">
 
-                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+                        <Link href="/">
+                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                            <RiHome5Fill className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Home</p>
-                        </div> {/*Btn home*/}
+                                <RiHome5Fill className="text-2xl text-white"/> 
+                                <p className="text-white font-bold uppercase">Home</p>
+                            </div> {/*Btn home*/}
+                        </Link>
                         <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
                             <GiDiamonds className="text-2xl text-white"/> 
                             <p className="text-white font-bold uppercase">Planos</p>
                         </div> {/*Btn planos*/}
-                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+                        <Link href="/tutorial">
+                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                            <FaDesktop className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Como usar</p>
-                        </div> {/*Btn como usar*/}
+                                <FaDesktop className="text-2xl text-white"/> 
+                                <p className="text-white font-bold uppercase">Como usar</p>
+                            </div> {/*Btn como usar*/}
+                        </Link>
                         <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
                             <BsTelephoneFill className="text-2xl text-white"/> 

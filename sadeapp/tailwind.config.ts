@@ -37,7 +37,7 @@ const config: Config = {
         },
       },
       boxShadow: {
-        'shadowContacts': '0px 0px 40px 5px rgba(63, 24, 158, 0.6)',
+        'shadowContacts': '0px 0px 20px 5px rgba(63, 24, 158, 0.3)',
       }
     },
   },

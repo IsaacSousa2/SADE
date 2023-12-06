@@ -4,7 +4,7 @@ export default function Introducao() {
 
     return(
 
-        <div className="flex flex-col gap-96 bg-darkPurple h-auto p-5 pt-40">
+        <div className="flex flex-col gap-20 bg-darkPurple h-auto p-5 pt-40">
 
             <div className="flex flex-col w-80 max-w-full px-2">
 
