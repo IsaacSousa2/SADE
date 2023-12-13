@@ -67,7 +67,7 @@ export const Header = () => {
             <div className={`fixed top-0 flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
             <div>
-                <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}
+                <Image className="hidden" src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}
             </div>
 
 
