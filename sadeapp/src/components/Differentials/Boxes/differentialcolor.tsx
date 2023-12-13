@@ -13,13 +13,13 @@ export const DifferentialBadgePurple = ({icon, titulo, texto} : DifferentialProp
 
         <div className="text-white bg-gradient-to-t from-darkPurple to-lightPurple rounded-xl flex  border-[1px] w-[290px] h-[310px] items-center justify-center font-semibold">{/*DIV PRIMARIA*/}
 
-            <div className="flex flex-col gap-y-3 items-center max-w-[270px] mx-auto p-3 text-center">{/*DIV SECUNDARIA*/}
+            <div className="flex flex-col gap-y-3 items-center max-w-[270px] mx-auto p-3 text-center justify-center">{/*DIV SECUNDARIA*/}
 
                 <div className=""><>{icon}</></div>{/*IMAGEM DO BOX*/}
 
                 <div className="text-2xl text-branco">{titulo}</div>{/*TITULO OD BOX*/}
 
-                <div className="text-branco text-justify indent-10">{texto}</div>{/*TEXTO DO BOX*/}
+                <div className="text-branco">{texto}</div>{/*TEXTO DO BOX*/}
 
               {/* 
                 <div>

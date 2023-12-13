@@ -20,7 +20,7 @@ export const Benefits = () => {
 
                     <BenefitsBadgeOrange icon={ <FaCheckDouble size={50} /> } titulo={"Segurança"} texto={"Altos padrões de segurança de dados, incluindo criptografia, autenticação, conformidade com regulamentações e atualizações constantes."} />{/*BOX*/}
 
-                    <BenefitsBadgeOrange icon={<FaPhoneAlt size={50} />} titulo={"Suporte"} texto={"Fornecer suporte técnico ágil e eficaz, juntamente com treinamento especializado para os usuários garantindo uma melhor experiência."} />{/*BOX COLORIDO*/}
+                    <BenefitsBadgeOrange icon={<FaPhoneAlt size={50} />} titulo={"Suporte"} texto={"Fornecer suporte técnico ágil e eficaz, juntamente com treinamento especializado para os usuários garantindo uma melhor experiência ao usuário e gerenciador."} />{/*BOX COLORIDO*/}
 
                     <BenefitsBadgeOrange icon={<MdInsertPhoto size={50} />  } titulo={"Resolução"} texto={"A capacidade de integração eficiente e perfeita com uma ampla gama de equipamentos de imagem para amplificar as possibilidades do usuário."} />{/*BOX*/}
 
