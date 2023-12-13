@@ -5,8 +5,8 @@ import logoBranco from "../../../public/images/Logo/logoBranco.png"/*Importando 
 import { MdMenu } from "react-icons/md";/*Importando menu hamburguer*/
 import { IoMdCloseCircle } from "react-icons/io";
 import { RiHome5Fill } from "react-icons/ri";
-import { FaDesktop } from "react-icons/fa";
-import { BsTelephoneFill } from "react-icons/bs";
+import { RiComputerFill } from "react-icons/ri";
+import { IoPerson } from "react-icons/io5";
 import { GiDiamonds } from "react-icons/gi";
 import { useState } from "react";/*Importando hook useState*/
 
@@ -32,29 +32,43 @@ export const Header = () => {
                     <div className="flex items-center gap-2 md:hidden">
 
                         <Link href="/">
+
                             <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
                                 <RiHome5Fill className="text-2xl text-white"/> 
                                 <p className="text-white font-bold uppercase">Home</p>
-                            </div> {/*Btn home*/}
-                        </Link>
-                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                            <GiDiamonds className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Planos</p>
-                        </div> {/*Btn planos*/}
-                        <Link href="/tutorial">
+                            </div> {/*Btn home*/}
+
+                        </Link>
+
+                        <Link href="#Planos">
                             <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                                <FaDesktop className="text-2xl text-white"/> 
+                                <GiDiamonds className="text-2xl text-white"/> 
+                                <p className="text-white font-bold uppercase">Planos</p>
+
+                            </div> {/*Btn planos*/}
+                        </Link>
+
+                        <Link href="/tutorial">
+                            
+                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+
+                                <RiComputerFill className="text-2xl text-white"/> 
                                 <p className="text-white font-bold uppercase">Como usar</p>
+
                             </div> {/*Btn como usar*/}
                         </Link>
-                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                            <BsTelephoneFill className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Contato</p>
-                        </div> {/*Btn contato*/}
+                        <Link href="#Sobre">
+                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+
+                                <IoPerson className="text-2xl text-white"/> 
+                                <p className="text-white font-bold uppercase">Sobre Nós</p>
+
+                            </div> {/*Btn contato*/}
+                        </Link>
 
                     </div> {/*Btns*/}
 
@@ -73,33 +87,41 @@ export const Header = () => {
 
                 <div className="flex flex-col gap-12 mt-20">
 
+                    <Link href="/">
                     <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                            <RiHome5Fill className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Home</p>
+                        <RiHome5Fill className="text-2xl text-white"/> 
+                        <p className="text-white font-bold uppercase">Home</p>
 
                     </div> {/*Btn home*/}
+                    </Link>
 
+                    <Link href="#Planos">
                     <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
                         <GiDiamonds className="text-2xl text-white"/> 
                         <p className="text-white font-bold uppercase">Planos</p>
 
                     </div> {/*Btn planos*/}
+                    </Link>
 
-                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+                    <Link href="/tutorial">
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                        <FaDesktop className="text-2xl text-white"/> 
-                        <p className="text-white font-bold uppercase">Como usar</p>
+                            <RiComputerFill className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Como usar</p>
 
-                    </div> {/*Btn como usar*/}
+                        </div> {/*Btn como usar*/}
+                    </Link>
 
-                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+                    <Link href="#Sobre">
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                        <BsTelephoneFill className="text-2xl text-white"/> 
-                        <p className="text-white font-bold uppercase">Contato</p>
+                            <IoPerson className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Sobre Nós</p>
 
-                    </div> {/*Btn contato*/}
+                        </div> {/*Btn contato*/}
+                    </Link>
 
                 </div> {/*Btns*/}
 

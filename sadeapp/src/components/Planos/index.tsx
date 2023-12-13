@@ -6,7 +6,7 @@ export default function Planos() {
 
     return(
 
-        <>
+        <div id="Planos">
 
             <TitlePlanos/>
 
@@ -70,6 +70,6 @@ export default function Planos() {
                     </>
                 }/>
             </div>
-        </>
+        </div>
     );
 };

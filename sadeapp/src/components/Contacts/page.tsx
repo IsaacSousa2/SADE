@@ -9,7 +9,7 @@ export const Contacts = () => {
 
     return(
 
-        <div className="flex w-full bg-purpleBg h-24 items-center">{/*DIV PRINCIPAL*/}
+        <div className="flex w-full bg-purpleBg h-24 items-center" id="Contato">{/*DIV PRINCIPAL*/}
 
             <div className="flex justify-evenly w-full px-5">{/*DIV PARA ALINHAMENTO*/}
 

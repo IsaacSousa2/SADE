@@ -6,7 +6,7 @@ import SadeImage from "../../../public/images/Logo/logoSade.png"
 export const AboutUs = () => {
 
     return(
-        <div className="">
+        <div className="" id="Sobre">
             <Title />
             <div className="flex flex-col gap-3">
 
