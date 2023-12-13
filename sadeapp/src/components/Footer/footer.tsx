@@ -19,9 +19,9 @@ export const Footer = () => {
                             <p className="font-semibold">SISTEMA DE GERENCIAMENTO</p>
                         </div>
                         <div className="flex gap-5">
-                            <a href="#" className=""><Image src={FacebookIcon} alt="Ícone do facebook" className="h-8 w-8"/></a>
-                            <a href="#" className=""><Image src={InstaIcon} alt="Ícone do instagram" className="h-8 w-8"/></a>
-                            <a href="#" className=""><Image src={TwitterIcon} alt="Ícone do twitter" className="h-8 w-8"/></a>
+                            <Image src={FacebookIcon} alt="Ícone do facebook" className="h-8 w-8"/>
+                            <Image src={InstaIcon} alt="Ícone do instagram" className="h-8 w-8"/>
+                            <Image src={TwitterIcon} alt="Ícone do twitter" className="h-8 w-8"/>
                         </div>
                     </div>
                 </div>          
