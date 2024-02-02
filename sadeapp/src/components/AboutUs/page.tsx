@@ -1,6 +1,6 @@
 import { Title } from "../Title/titleAbout"
 import Image from "next/image"
-import BackIcons from "../../../public/images/Backgrounds/BackICons.png"
+/*import BackIcons from "../../../public/images/Backgrounds/BackICons.png"*/
 import SadeImage from "../../../public/images/Logo/logoSade.png"
 
 export const AboutUs = () => {
@@ -15,7 +15,7 @@ export const AboutUs = () => {
                 </div> {/*Foto do sistema*/}
 
                 <div className="flex justify-center pt-5">
-                    <p className="max-w-[1000px] font-semibold text-xl indent-10 text-justify">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal. Na essência do nosso propósito está a missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
+                    <p className="max-w-[1000px] font-semibold text-xl indent-10 pr-8 pl-8">Software para gestão de atendimento Integrado a equipamentos de  imagem, doravante SADE. A implantação contempla configuração de máquinas e servidores, testes e treinamento de pessoal. Na essência do nosso propósito está a missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
                 </div> {/*Texto*/}
 
                 {/*
