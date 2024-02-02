@@ -10,9 +10,9 @@ export default function Carrosel() {
 
     return (
 
-        <>
+        <div className="w-[700px] max-w-full">
 
-            <Swiper slidesPerView={1} modules={[Navigation]} navigation={true} loop={true} className={`w-[540px] max-w-full`}>
+            <Swiper slidesPerView={1} modules={[Navigation]} navigation={true} loop={true} className={`w-[700px] max-w-full rounded-3xl bg-white`}>
 
                 <SwiperSlide><Image src={Imagem1} alt="Imagem do sistema 1" draggable="false" loading="eager"/></SwiperSlide>
                 <SwiperSlide><Image src={Imagem1} alt="Imagem do sistema 1" draggable="false" loading="eager"/></SwiperSlide>
@@ -21,6 +21,6 @@ export default function Carrosel() {
             </Swiper>
 
 
-        </>
+        </div>
     );
 };

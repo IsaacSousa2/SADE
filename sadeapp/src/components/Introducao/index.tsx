@@ -5,7 +5,7 @@ export default function Introducao() {
 
     return(
 
-        <div className="flex items-center justify-between bg-darkPurple p-5 pb-40 pt-40 lg:flex-col">
+        <div className="flex items-center justify-between bg-darkPurple p-5 pb-40 pt-20 xl:flex-col">
 
             <div className="flex flex-col gap-20 max-w-full">
 
@@ -16,12 +16,14 @@ export default function Introducao() {
 
                 </div> {/*Textos*/}
 
-                <div className="flex items-center gap-3">
+                <a href="#Sobre">
+                    <div className="flex items-center gap-3 duration-[0.2s] cursor-pointer hover:scale-105">
 
-                    <IoArrowDownCircle className="text-5xl text-white"/>
-                    <p className="text-gray-300">Continue navegando</p>
+                        <IoArrowDownCircle className="text-5xl text-white"/>
+                        <p className="text-gray-300">Continue navegando</p>
 
-                </div> {/*Continue navegando*/}
+                    </div> {/*Continue navegando*/}
+                </a>
 
             </div>
 

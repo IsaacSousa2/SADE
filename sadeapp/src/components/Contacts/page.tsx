@@ -13,9 +13,17 @@ export const Contacts = () => {
 
             <div className="flex justify-evenly w-full px-5">{/*DIV PARA ALINHAMENTO*/}
 
-                <FaInstagram className="bg-darkPurple p-2 rounded-full text-white text-5xl duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110"/>
-                <FaXTwitter className="bg-darkPurple p-2 rounded-full text-white text-5xl duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110"/>
-                <FaFacebook className="bg-darkPurple p-2 rounded-full text-white text-5xl duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110"/>
+                <div className="bg-darkPurple p-2 rounded-full duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110">
+                    <FaInstagram className=" text-white text-4xl"/>
+                </div> {/*Instagram*/}
+
+                <div className="bg-darkPurple p-2 rounded-full duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110">
+                    <FaXTwitter className="text-white text-4xl"/>
+                </div> {/*Twitter*/}
+
+                <div className="bg-darkPurple p-2 rounded-full duration-[0.2s] cursor-pointer hover:shadow-shadowContacts hover:scale-110">
+                    <FaFacebook className="text-white text-4xl"/>
+                </div> {/*Facebook*/}
 
             </div>{/*DIV PARA ALINHAMENTO*/}
 

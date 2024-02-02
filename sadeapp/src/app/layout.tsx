@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ['latin'], weight:['400', '600'] })
 export const metadata: Metadata = {
   
   title: 'SADE',
-  description: 'Sistema de Gerenciamento',
+  description: 'Venha conhecer o nosso sistema de gerenciamento',
   icons:{
     icon:[
       '/favicon.ico?v=1'

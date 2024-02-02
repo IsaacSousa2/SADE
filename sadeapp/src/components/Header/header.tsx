@@ -25,7 +25,7 @@ export const Header = () => {
 
             <div className="z-10 fixed w-full px-2 pt-2 drop-shadow-md">
 
-                <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl">
+                <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl md:justify-between md:px-5">
 
                     <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" className="w-16"/> {/*Logo*/}
 
@@ -72,28 +72,29 @@ export const Header = () => {
 
                     </div> {/*Btns*/}
 
-                    <MdMenu onClick={abrirMenu} className="hidden md:flex text-3xl cursor-pointer text-white duration-[0.2s] p-1 rounded-lg hover:bg-lightOrange"/> {/*Btn para abrir menu*/}
+                    <MdMenu onClick={abrirMenu} className="hidden md:flex text-4xl cursor-pointer text-white duration-[0.2s] p-1 rounded-lg hover:bg-lightOrange"/> {/*Btn para abrir menu*/}
 
                 </div>
 
             </div> {/*Header*/}
 
-            <div className={`fixed top-0 flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
+            {menuAtivado ? <div className="z-10 fixed w-full h-full bg-black/20"></div> : <></>}
 
-            <div>
-                <Image className="hidden" src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}
-            </div>
+            <div className={`z-10 fixed top-0 flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
+                <div>
+                    <Image className="w-20" src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" width={120}/> {/*Logo*/}
+                </div>
 
-                <div className="flex flex-col gap-12 mt-20">
+                <div className="flex flex-col gap-3 mt-20">
 
                     <Link href="/">
-                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
+                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
-                        <RiHome5Fill className="text-2xl text-white"/> 
-                        <p className="text-white font-bold uppercase">Home</p>
+                            <RiHome5Fill className="text-2xl text-white"/> 
+                            <p className="text-white font-bold uppercase">Home</p>
 
-                    </div> {/*Btn home*/}
+                        </div> {/*Btn home*/}
                     </Link>
 
                     <Link href="#Planos">
@@ -126,7 +127,7 @@ export const Header = () => {
                 </div> {/*Btns*/}
 
                 <div onClick={abrirMenu} className="text-white">
-                    <IoMdCloseCircle className="text-3xl" />
+                    <IoMdCloseCircle className="text-4xl cursor-pointer text-white duration-[0.2s] p-1 rounded-lg hover:bg-lightOrange" />
                 </div>
 
             </div> {/*Header para telas menores*/}   

@@ -16,14 +16,14 @@ export default function tutorial() {
         <>  
             <Header/>
 
-            <div className="flex flex-col gap-5 items-center pt-40">
+            <div className="flex flex-col gap-3 items-center pt-40">
 
                 <Tutorial number={1} text="1 - Ao abrir o nosso sistema, irá aparecer algumas opções para você, como a aba de pacientes e profissionais." imageUrl={Imagem1}/>
                 <Tutorial number={2} text="2 - Caso queira ver todos os pacientes cadastrados no seu sistema junto com suas informações, aqui você verá não apenas isso, como poderá adicionar atendimentos, editar e ver históricos de atendimentos. Mas caso queira adicionar outro paciente, clique no botão “Adicionar”." imageUrl={Imagem2}/>
-                <Tutorial number={3} text="2.1 - Importante ressaltar que caso queira enviar os dados dos exames para o paciente, clique no botão do acesso, irá aparecer um pop-up com duas opções, escolha a que lhe parecer melhor.”." imageUrl={Imagem6}/>
-                <Tutorial number={4} text="3 - Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente." imageUrl={Imagem3}/>
-                <Tutorial number={5} text="4 - Da mesma forma que podemos ver os pacientes, também podemos ver a dos profissionais que estão cadastrados, e caso queira adicionar outro profissional, clique no botão “Adicionar”." imageUrl={Imagem4}/>
-                <Tutorial number={6} text="5 -  Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente.5 -  Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente.”." imageUrl={Imagem5}/>
+                <Tutorial number={3} text="3 - Importante ressaltar que caso queira enviar os dados dos exames para o paciente, clique no botão do acesso, irá aparecer um pop-up com duas opções, escolha a que lhe parecer melhor.”." imageUrl={Imagem6}/>
+                <Tutorial number={4} text="4 - Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente." imageUrl={Imagem3}/>
+                <Tutorial number={5} text="5 - Da mesma forma que podemos ver os pacientes, também podemos ver a dos profissionais que estão cadastrados, e caso queira adicionar outro profissional, clique no botão “Adicionar”." imageUrl={Imagem4}/>
+                <Tutorial number={6} text="6 -  Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente.5 -  Após preencher todo o formulário do paciente, clique em salvar para registrar o paciente.”." imageUrl={Imagem5}/>
                 
             </div>
         </>

@@ -21,14 +21,6 @@ export const DifferentialBadgePurple = ({icon, titulo, texto} : DifferentialProp
 
                 <div className="text-branco">{texto}</div>{/*TEXTO DO BOX*/}
 
-              {/* 
-                <div>
-                    <a href="#">
-                        <Button className="bg-branco text-darkPfrom-darkPurple w-[140px] h-[40px] rounded-md hover:bg-lightPurple  duration-[0.7s]">Leia Mais</Button>
-                    </a>
-                </div>
-                 */} {/*Botão*/}
-                
             </div>
 
         </div>
