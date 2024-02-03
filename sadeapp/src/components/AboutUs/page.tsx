@@ -1,7 +1,6 @@
-import { Title } from "../Title/titleAbout"
-import Image from "next/image"
-import BackIcons from "../../../public/images/Backgrounds/BackICons.png"
-import SadeImage from "../../../public/images/pc.png"
+import { Title } from "../Title/titleAbout";
+import Image from "next/image";
+import SadeImage from "../../../public/images/pc.png";
 
 export const AboutUs = () => {
 

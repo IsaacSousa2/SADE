@@ -20,8 +20,8 @@ export default function Home() {
        <AboutUs />
        <Differences/>
        <Benefits/>
-       <Planos/>
        <Achievements />
+       <Planos/>
        <Footer />
     </div>
 
