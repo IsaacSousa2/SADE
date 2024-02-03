@@ -1,1 +1,0 @@
--> melhora o código, tornando-o mais legível, fácil de manter e escalável ex: useState, useEffect
