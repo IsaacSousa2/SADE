@@ -1,5 +1,4 @@
 'use client';
-import { useState } from "react";
 import { Header } from "@/components/Header/header";
 import Tutorial from "@/components/tutorial";
 import ZoomImagem from "@/components/zoomImagem";
@@ -10,9 +9,9 @@ import Imagem4 from "../../../public/images//Tutorialimg/Imagem4.png"
 import Imagem5 from "../../../public/images//Tutorialimg/Imagem5.png"
 import Imagem6 from "../../../public/images//Tutorialimg/Imagem6.png"
 import { StaticImageData } from "next/image";
-import { IoCloseCircle } from "react-icons/io5";
+import { useState } from "react";
 
-export default function tutorial() {
+export default function TutorialPage() {
 
     const[ zoom, setZoom ] = useState(false);
     const[ imagem, setImage ] = useState<StaticImageData>();
