@@ -14,7 +14,7 @@ export const AboutUs = () => {
                 </div> {/*Foto do sistema*/}
 
                 <div className="flex justify-center pt-5">
-                    <p className="max-w-[1000px] text-xl indent-10 text-justify">Software para gestão de atendimento integrado a equipamentos de imagem, doravante SADE. A implantação contempla a configuração de máquinas e servidores, testes e treinamento de pessoal. A essência do nosso propósito está na missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
+                    <p className="max-w-[1000px] text-xl indent-10 font-bold p-7">Software para gestão de atendimento integrado a equipamentos de imagem, doravante SADE. A implantação contempla a configuração de máquinas e servidores, testes e treinamento de pessoal. A essência do nosso propósito está na missão de facilitar o cotidiano dos profissionais de saúde, promovendo eficiência, precisão e acessibilidade. Acreditamos que a tecnologia pode ser a aliada definitiva na busca por uma saúde mais inteligente e centrada no paciente.</p>
                 </div> {/*Texto*/}
 
             </div>
