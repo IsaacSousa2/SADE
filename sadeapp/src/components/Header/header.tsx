@@ -25,7 +25,7 @@ export const Header = () => {
 
             <div className="z-10 fixed w-full px-2 pt-2 drop-shadow-md">
 
-                <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl md:justify-between md:px-5">
+                <div className="flex items-center justify-evenly bg-darkOrange w-full h-12 rounded-2xl    md:justify-between md:px-5">
 
                     <Image src={logoBranco} alt="Logo da Sade" draggable="false" loading="eager" className="w-16"/> {/*Logo*/}
 
@@ -78,7 +78,7 @@ export const Header = () => {
 
             </div> {/*Header*/}
 
-            {menuAtivado ? <div className="z-10 fixed w-full h-full bg-black/20"></div> : <></>}
+            {menuAtivado ? <div className="z-10 fixed w-full h-screen bg-black/20"></div> : <></>}
 
             <div className={`z-10 fixed top-0 flex flex-col items-center bg-darkOrange w-[300px] h-screen p-4 mdMin:hidden duration-[0.2s] justify-between ${menuAtivado ? "ml-0" : "ml-[-300px]"}`}>
 
