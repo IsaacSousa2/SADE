@@ -7,8 +7,9 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { RiHome5Fill } from "react-icons/ri";
 import { RiComputerFill } from "react-icons/ri";
 import { IoPerson } from "react-icons/io5";
-import { GiDiamonds } from "react-icons/gi";
+import { GiDiamonds } from "react-icons/gi"; 
 import { useState } from "react";/*Importando hook useState*/
+import { useEffect } from "react"; }
 
 export const Header = () => {
 
