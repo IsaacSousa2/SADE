@@ -43,15 +43,6 @@ export const HeaderP = () => {
 
                         </Link>
 
-                        <Link href="#Planos">
-                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
-
-                                <GiDiamonds className="text-2xl text-white"/> 
-                                <p className="text-white font-bold uppercase">Planos</p>
-
-                            </div> {/*Btn planos*/}
-                        </Link>
-
                         <Link href="/tutorial">
                             
                             <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
@@ -61,16 +52,7 @@ export const HeaderP = () => {
 
                             </div> {/*Btn como usar*/}
                         </Link>
-
-                        <Link href="#Sobre">
-                            <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
-
-                                <IoPerson className="text-2xl text-white"/> 
-                                <p className="text-white font-bold uppercase">Sobre Nós</p>
-
-                            </div> {/*Btn contato*/}
-                        </Link>
-
+                        
                     </div> {/*Btns*/}
 
                     <MdMenu onClick={abrirMenu} className="hidden md:flex text-4xl cursor-pointer text-white duration-[0.2s] p-1 rounded-lg hover:bg-lightOrange"/> {/*Btn para abrir menu*/}
