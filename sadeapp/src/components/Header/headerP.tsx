@@ -9,9 +9,9 @@ import { RiComputerFill } from "react-icons/ri";
 import { IoPerson } from "react-icons/io5";
 import { GiDiamonds } from "react-icons/gi"; 
 import { useState } from "react";/*Importando hook useState*/
-import { useEffect } from "react"; 
+import { useEffect } from "react"; }
 
-export const Header = () => {
+export const HeaderP = () => {
 
     const[menuAtivado, setMenuAtivado] = useState(false);
 
@@ -98,15 +98,6 @@ export const Header = () => {
                         </div> {/*Btn home*/}
                     </Link>
 
-                    <Link href="#Planos">
-                    <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
-
-                        <GiDiamonds className="text-2xl text-white"/> 
-                        <p className="text-white font-bold uppercase">Planos</p>
-
-                    </div> {/*Btn planos*/}
-                    </Link>
-
                     <Link href="/tutorial">
                         <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
 
@@ -114,15 +105,6 @@ export const Header = () => {
                             <p className="text-white font-bold uppercase">Como usar</p>
 
                         </div> {/*Btn como usar*/}
-                    </Link>
-
-                    <Link href="#Sobre">
-                        <div className="flex items-center gap-1 duration-[0.2s] p-1 rounded-lg cursor-pointer hover:bg-lightOrange">
-
-                            <IoPerson className="text-2xl text-white"/> 
-                            <p className="text-white font-bold uppercase">Sobre Nós</p>
-
-                        </div> {/*Btn contato*/}
                     </Link>
 
                 </div> {/*Btns*/}

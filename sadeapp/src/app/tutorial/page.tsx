@@ -1,5 +1,4 @@
 'use client';
-import { Header } from "@/components/Header/header";
 import Tutorial from "@/components/tutorial";
 import ZoomImagem from "@/components/zoomImagem";
 import Imagem1 from "../../../public/images//Tutorialimg/Imagem1.png"
@@ -10,6 +9,7 @@ import Imagem5 from "../../../public/images//Tutorialimg/Imagem5.png"
 import Imagem6 from "../../../public/images//Tutorialimg/Imagem6.png"
 import { StaticImageData } from "next/image";
 import { useState } from "react";
+import { HeaderP } from "@/components/Header/headerP";
 
 export default function TutorialPage() {
 
@@ -19,7 +19,7 @@ export default function TutorialPage() {
     return(
         
         <>  
-            <Header/>
+            <HeaderP />
             { zoom ? <div onClick={() => {setZoom(false)}} className="z-20 fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/20 w-full h-full"></div> : <></> } {/*Fundo*/}
             { zoom ? <ZoomImagem image={imagem}/> : <></> }
             
